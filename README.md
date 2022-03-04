@@ -27,3 +27,6 @@ test:
   <<: *default
   database: myapp_test
 ```
+
+### Step 5 - Stop docker and run the following again if not working
+`docker-compose up -d`
