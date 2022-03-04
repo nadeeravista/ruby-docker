@@ -2,13 +2,6 @@
 `docker-compose run --no-deps web rails new . --force --database=postgresql`
 
 ### Step 2 - Build docker
-`docker-compose build`
-
-### Step 3 - Run docker detached
-`docker-compose up -d`
-Your app spunded up in port 3000
-
-### Step 4 - Replace the contents of config/database.yml with the following:
 ```
 default: &default
   adapter: postgresql
@@ -28,5 +21,11 @@ test:
   database: myapp_test
 ```
 
-### Step 5 - Stop docker and run the following again if not working
-`docker-compose up -d`
+### Step 3 - Run docker detached
+Stop docker contaiiners and run the following again if not working
+```
+docker-compose build
+docker-compose up -d
+docker-compose run web rake db:create
+```
+Your app spunded up in port 3000
