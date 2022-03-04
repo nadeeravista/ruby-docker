@@ -13,4 +13,5 @@ irb(main):005:0> Band.create(name: "The Beatles")
 Bands can have members - build the model for that relationship
 ```
 docker-compose run web rails g model Member band:references name:string
+docker-compose run web rails db:migrate
 ````
