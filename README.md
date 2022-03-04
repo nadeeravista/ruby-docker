@@ -31,4 +31,4 @@ docker-compose run web rake db:create
 Your app spunded up in port 3000
 
 ### Step 4 - Start coding rails
-[Basicls of rails](./HOWTO-RAILS.md)
+[Basicls of rails -  HOWTO-RAILS.md ](./HOWTO-RAILS.md)
