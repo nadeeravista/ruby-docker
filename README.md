@@ -9,7 +9,7 @@
 Your app spunded up in port 3000
 
 ### Step 4 - Replace the contents of config/database.yml with the following:
-``
+```
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -26,4 +26,4 @@ development:
 test:
   <<: *default
   database: myapp_test
-``
+```
